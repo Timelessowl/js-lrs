@@ -1,0 +1,17 @@
+{
+  "name": "js-lr3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "sort": "node sort.ts",
+    "search": "node search.ts",
+    "brackets": "node brackets.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4"
+  }
+}
