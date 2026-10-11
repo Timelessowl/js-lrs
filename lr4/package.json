@@ -1,0 +1,29 @@
+{
+  "name": "js-lr4",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:sort": "tsc -p tsconfig.sort.json",
+    "build:top-k-max": "tsc -p tsconfig.top-k-max.json",
+    "build:top-k-min": "tsc -p tsconfig.top-k-min.json",
+    "build:priority-queue": "tsc -p tsconfig.priority-queue.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:sort": "tsc -p tsconfig.sort.json --noEmit",
+    "typecheck:top-k-max": "tsc -p tsconfig.top-k-max.json --noEmit",
+    "typecheck:top-k-min": "tsc -p tsconfig.top-k-min.json --noEmit",
+    "typecheck:priority-queue": "tsc -p tsconfig.priority-queue.json --noEmit",
+    "sort": "npm run build:sort && node dist/sort/sort.js",
+    "top-k-max": "npm run build:top-k-max && node dist/top-k-max/top-k-max.js",
+    "top-k-min": "npm run build:top-k-min && node dist/top-k-min/top-k-min.js",
+    "priority-queue": "npm run build:priority-queue && node dist/priority-queue/priority-queue.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
