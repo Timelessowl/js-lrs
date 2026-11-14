@@ -1,0 +1,10 @@
+!/frontend/package-lock.json
+node_modules/
+dist*/
+.data/
+.env
+.env.*
+*.log
+.DS_Store
+test/
+/requirements.md
